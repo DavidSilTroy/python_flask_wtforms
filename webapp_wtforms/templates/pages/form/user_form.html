@@ -11,6 +11,15 @@
         <p>{{ form.name() }}</p>
         <p>{{ form.password.label }}</p>
         <p>{{ form.password() }}</p>
+        <p>{{ form.email.label }}</p>
+        <p>{{ form.email(size=40) }}</p>
+        <p>{{ form.subscribe() }} {{ form.subscribe.label }}</p>
+        <p>{{ form.gender.label }}</p>
+        <p>
+            {{ form.gender(class="radio-inline") }}
+            {{ form.gender.label(class="radio-inline") }}
+        </p> 
+        <p>{{ form.country() }}</p>
         <p>{{ form.submit() }}</p>
     </form>
 </body>

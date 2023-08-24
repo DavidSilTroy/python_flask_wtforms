@@ -3,6 +3,9 @@ flask
 #to create forms for main tables
 Flask-WTF
 
+#to validate emails in flask-wtf
+email_validator
+
 #for qr-code generation
 Flask-QRcode
 

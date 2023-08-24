@@ -14,7 +14,8 @@ def home():
 # Successfully sent data with the form
 @home_views.route('/well_done')
 def well_done():
-    return 'Great! Well Done! (I have your data now 😈 hahaha, actually not.)' # just kidding!
+
+    return f'Great! Well Done! (I have your data now 😈 hahaha, actually not.)' # just kidding!
 
 # User form, first form
 @home_views.route('/user_form', methods=['GET', 'POST'])
@@ -24,6 +25,10 @@ def user_form():
         # taking the data to be processed
         name = form.name.data
         password = form.password.data
+        email = form.email.data
+        subscribe = form.subscribe.data
+        gender = form.gender.data
+        country = form.country.data 
         # Send to another route
         return redirect(url_for('home_views.well_done'))
     return render_template('pages/form/user_form.html', form=form) 
