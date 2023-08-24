@@ -1,0 +1,15 @@
+flask
+
+#to create forms for main tables
+Flask-WTF
+
+#for qr-code generation
+Flask-QRcode
+
+#for testing
+pytest
+
+#for the server
+wheel
+gunicorn # not for windows
+#waitress # for windows
