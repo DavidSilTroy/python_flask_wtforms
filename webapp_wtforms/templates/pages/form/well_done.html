@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well done!</title>
+</head>
+<body>
+<h1> Well done!</h1>
+<small>Great! Well Done! (I have your data now 😈 hahaha, actually not.)</small>
+<hr>
+{% if data %}
+    <h3> Hey, I have here some data:</h3>
+    <div id="form_data">
+        {{data}}  
+    </div>
+{% else %}
+    <p>Ok, that is all.</p>
+{% endif %}
+    
+</body>
+</html>
